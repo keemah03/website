@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0, 5px, 15px, rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+}
+
+.product-image {
+  background-color: hsl(158, 36%, 37%);
+  flex: 1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 20px 30px;
+  flex: 1;
+}
+
+.product-name {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 14px;
+  color: hsl(212, 21%, 14%);
+  margin-bottom: 20px;
+}
+
+.product-description {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.btn {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  padding: 20px 10px;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
